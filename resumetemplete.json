@@ -1,1 +1,137 @@
-{"titleNameMap":{"educationList":"教育背景","workExpList":"工作经历","projectList":"项目经历","skillList":"个人技能","awardList":"更多信息","workList":"个人作品","aboutme":"自我介绍"},"avatar":{"hidden":true},"profile":{"name":"蒋志龙","email":"zhilong_jiang@126.com","mobile":"18845583419","github":"","zhihu":"","workExpYear":"","workPlace":"","positionTitle":"后端工程师"},"educationList":[],"awardList":[{"award_info":"英语 CET6","award_time":"2015"},{"award_info":"蚂蚁近卫军 卓越个人奖","award_time":"2018.09"},{"award_info":"前端练习生 可视化讲师","award_time":"2020.10"},{"award_info":"前端早早聊 分享 “如何构思和开发开箱即用的可视化图表库 G2Plot”","award_time":"2021.07"}],"workExpList":[{"work_time":"2021.4～至今","company_name":"滴滴出行","department_name":"MPT交易市场技术","work_desc":"高级研发工程师"}],"skillList":[{"skill_name":"C++和golang","skill_desc":"","skill_level":89,"dataIndex":0},{"skill_name":"数据结构与算法","skill_level":90,"dataIndex":1,"skill_desc":""},{"skill_name":"tensorflow","skill_desc":"熟悉基本原理，能够做二次开发","skill_level":60,"dataIndex":2},{"skill_name":"redis","skill_desc":"","skill_level":80,"dataIndex":3}],"projectList":[{"project_name":"特征服务Dufe-Api性能优化","project_role":"项目owner","project_time":"2021.06 - 2021.09","project_desc":" dufe-api为异构特征存储的代理服务，接手时该服务面临下游依赖复杂、单次获取特征维度规模大、优化需求紧迫等问题。每到周五晚高峰就需要上游降级，严重影响到网约车的交易与定价链路的稳定性，同时由于单次特征获取耗时问题，使得导流业务推进受阻。","project_content":"1.针对服务本身优化：通过分析服务内部的耗时埋点、火焰图等情况，采用了多级缓存与预聚合、算子操作重构、调度流程重新编排等手段，使得链路耗时从60ms降至35ms，单次获取特征数从300提升至2000+。\n2.针对下游协同优化：通过分析多种不同特征下游的耗时情况，推动下游协作优化，采用了特征预聚合、通信协议优化、RPC对冲请求优化等手段，链路耗时从35ms优化至25ms。\n3.针对上游协同优化：通过分析高耗时上游的请求特点，采用mapreduce的思想，将一次大请求拆分请求多个小请求，使得单次获取特征数达到理论无上限。\n","dataIndex":0},{"project_name":"模型服务Ether2.0建设","project_role":"在线架构owner","project_time":"2021.09～2022.04","project_desc":"随着网约车业务成熟，模型策略的作用愈加明显，模型服务的迭代需求不断加快，为了更快速、更稳定的支持需求迭代，在Ether1.0版本上进行了2.0的迭代。","project_content":"1.多点部署+本地计算：为提高小模型预估性能与减轻模型服务压力，建设了多点部署与本地计算能力，通过提供SDK的访问方式，使得业务的模型可以部署在业务的容器中，并且模型计算的过程在本地进行，减少了RPC的调用，使得小模型预估在5ms内返回结果。\n2.跨语言特征工程库建设：为解决离在线特征一致性问题，建设了跨语言的特征工程库，使得在线预估与离线训练使用的特征处理完全一致。\n3.模型闭环监控体系：为实时监控并主动发现异常模型，建设了一套模型闭环监控系统，实时发现模型预估过程中的数据偏移问题。\n","dataIndex":1},{"project_name":"分单系统技术建设","project_role":"核心开发者","project_time":"2021.04 - 至今","project_desc":"滴滴网约车分单系统采用的是全局指派模式，为探索新的业务模式，基于原有的全局指派分单系统建设了一套能够提供司机选单能力和司乘议价的分单系统。","project_content":"1.针对当前分单矩阵全局随机分片导致下游压力重复冗余问题，采用GeoHash算法优化分单矩阵的分片方式，使得在大城市高峰期分片数量降低50%以上，同时使得分单给下游的请求压力同比减小50%。\n2.针对分单系统日益复杂的策略、低效的研发与算法的协作开发问题，参与建设了分单运营策略平台，目前完成MVP1.0版本。\n","dataIndex":2}],"workList":[],"aboutme":{"aboutme_desc":"      两年策略架构在线服务经验，对O2O业务场景下的通用策略架构与垂直策略架构有一定的理解与实战经验。\n       对tensorflow、xgboost等常用机器学习框架的代码架构有一定的了解，能够熟练的基于机器学习框架进行二次开发。\n"},"data":{"StrategyID":73},"theme":{"color":"#2f5785","tagColor":"#8bc34a"}}
+{
+    "titleNameMap": {
+        "educationList": "教育背景",
+        "workExpList": "工作经历",
+        "projectList": "项目经历",
+        "skillList": "个人技能",
+        "awardList": "更多信息",
+        "workList": "个人作品",
+        "aboutme": "自我介绍"
+    },
+    "avatar": {
+        "hidden": false
+    },
+    "profile": {
+        "name": "姓名",
+        "email": "736****86@qq.com",
+        "mobile": "156********",
+        "github": "https://github.com/visiky",
+        "zhihu": "https://zhihu.com/people/visiky",
+        "workExpYear": "",
+        "workPlace": "浙江杭州",
+        "positionTitle": "前端工程师"
+    },
+    "educationList": [
+        {
+            "edu_time": [
+                "2014.09.01",
+                "2018.06.30"
+            ],
+            "school": "华南理工大学",
+            "major": "网络工程",
+            "academic_degree": "本科"
+        }
+    ],
+    "awardList": [
+        {
+            "award_info": "英语 CET6",
+            "award_time": "2015"
+        },
+        {
+            "award_info": "蚂蚁近卫军 卓越个人奖",
+            "award_time": "2018.09"
+        },
+        {
+            "award_info": "前端练习生 可视化讲师",
+            "award_time": "2020.10"
+        },
+        {
+            "award_info": "前端早早聊 分享 “如何构思和开发开箱即用的可视化图表库 G2Plot”",
+            "award_time": "2021.07"
+        }
+    ],
+    "workExpList": [
+        {
+            "company_name": "蚂蚁集团",
+            "department_name": "体验技术部",
+            "work_time": [
+                "2018.06",
+                null
+            ],
+            "work_desc": "1. 担任蚂蚁高管决策和管理协同产品 “数据作战室” 的前端负责人\r\n2. 负责蚂蚁敏捷 BI 产品 “DeepInsight” 的可视分析模块产品能力建设\n3. 数据可视化 AntV 团队核心成员，负责 G2、G2Plot 开源技术的建设"
+        },
+        {
+            "company_name": "蚂蚁金服",
+            "department_name": "大数据部",
+            "work_time": [
+                "2017.06",
+                "2017.12"
+            ],
+            "work_desc": "前端实习生。使用 React 参与开发多类产品：数据研发平台、数据决策平台、数据分析平台的研发工作，同时也参与大型 BI 产品的重构工作，有良好的编码习惯。"
+        },
+        {
+            "company_name": "数沃信息科技有限公司",
+            "department_name": "",
+            "work_time": [
+                "2017.03",
+                "2017.05"
+            ],
+            "work_desc": "前端实习生。使用 Vue 来实现平台功能和逻辑，再用 ECharts 来对数据挖掘分析后的可视化结果进行展示"
+        }
+    ],
+    "skillList": [
+        {
+            "skill_name": "HTML 和 CSS",
+            "skill_desc": "",
+            "skill_level": 89
+        },
+        {
+            "skill_name": "TypeScript / JavaScript",
+            "skill_level": 90
+        },
+        {
+            "skill_name": "数据可视化",
+            "skill_desc": "丰富的可视化工程实践以及开源经验",
+            "skill_level": 90
+        },
+        {
+            "skill_name": "React / 前端工程化",
+            "skill_desc": "大型前端项目经验以及组件库开发经验",
+            "skill_level": 80
+        }
+    ],
+    "projectList": [
+        {
+            "project_name": "数据作战室",
+            "project_role": "前端负责人",
+            "project_time": "2019.04 - 2020.06",
+            "project_desc": "面向总裁和高管以及决策 BI 的数字化经营决策和管理协同产品。提供一站式的数据化经营决策和管理协同功能，让高管高效获取决策信息，并提升管理效率。",
+            "project_content": "1. 项目从0到1的框架设计和开发 2. 产品体验精雕细琢的打磨 3. 建立稳定性保障机制。目前仍在迭代中，帮助提升高管业务决策效率"
+        },
+        {
+            "project_name": "DeepInsight",
+            "project_role": "可视分析负责人",
+            "project_time": "2018.07 - 2019.04 / 2020.07 - 至今",
+            "project_desc": "DeepInsight 是蚂蚁集团自主研发的自助式 BI 数据洞察分析平台，面向企业分析人员、业务人员和开发人员，帮助蚂蚁集团实现精细化运营。",
+            "project_content": "BI 平台工具核心部分是报表制作，也就是通过数据连接、可视化配置形成图表物料之后，通过拖拽方式进行页面编排，最终形成报表页面进行发布的过程。\n1. 主导开放能力建设，拉通产品、设计建设和扩展可视化图形，提升丰富度\n2. 产品体验优化，尤其是对 ECharts 的体验顽疾进行攻克\n3. 主导可视化能力建设：业务标准化图表库建设(通用组件设计和开发经验丰富)、促进数据分析能力增强等可视化一体化建设"
+        },
+        {
+            "project_name": "G2、G2Plot",
+            "project_role": "核心开发者",
+            "project_time": "2019 - 至今",
+            "project_desc": "G2 是基于图形语法理论的可视化渲染引擎，G2Plot 是在 G2 基础上封装的开箱即用的统计可视化图表库",
+            "project_content": "AntV 可视化建设，赋能整个蚂蚁和阿里集团统计可视化分析相关业务。负责 AntV 系列: AntV 官网、G 渲染引擎、 G2、G2Plot、ThemeSet 主题构建器等开源项目的研发工作。"
+        }
+    ],
+    "workList": [],
+    "aboutme": {
+        "aboutme_desc": "🌱 Focus on data visualization and analysis 😈 能力项：沟通协调能力、执行力\n    自驱型前端工程师，三年多大型复杂产品开发经验，负责蚂蚁集团 BI 产品 DeepInsight 的可视化建设，参与了从图表库到 BI 产品力的一体化建设，对商业智能领域的数据可视化建设有较为丰富的经验。\n    参与 AntV 团队开源项目 G2、G2Plot 的研发，目前是 G2Plot 的主要负责人。\n    "
+    },
+    "data": {
+        "StrategyID": 73
+    },
+    "theme": {
+        "color": "#2f5785",
+        "tagColor": "#8bc34a"
+    }
+}
